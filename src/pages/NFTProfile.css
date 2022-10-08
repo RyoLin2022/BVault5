@@ -1,0 +1,28 @@
+.nft-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nft-card {
+    flex: 1;
+    height: calc((100%)/4);
+    width: calc((100%)/4);
+    min-width: calc((100%)/4);
+    max-width: calc((100%)/4);
+    border: 1px solid black;
+}
+
+
+@media (max-width: 500px) {
+    .nft-card {
+        flex: 1;
+        height: calc((100%)/3);
+        width: calc((100%));
+        min-width: calc((100%));
+        max-width: calc((100%));
+        border: 1px solid black;
+    }
+}
