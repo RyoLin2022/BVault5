@@ -10,13 +10,13 @@ import logo from '../../assets/images/logo/logo.png'
 let currentAccount = null;
 
 const Header = () => {
-    // connectWalletAfter1second()
-    // async function connectWalletAfter1second() {
-    //     setTimeout(function () {
-    //         console.log('The first log delay 1 second')
-    //         connectWallet();
-    //     }, 500)
-    // }
+    connectWalletAfter1second()
+    async function connectWalletAfter1second() {
+        setTimeout(function () {
+            console.log('The first log delay 1 second')
+            connectWallet();
+        }, 500)
+    }
     const [WalletAddress, setWalletAddress] = useState(null)
     async function changingAccount() {
         if (window.ethereum) {
